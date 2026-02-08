@@ -6,7 +6,8 @@ export type ErrorCode =
   | "TIMEOUT"
   | "NETWORK_ERROR"
   | "MALFORMED_RESPONSE"
-  | "INTERNAL_ERROR";
+  | "INTERNAL_ERROR"
+  | "UNSUPPORTED_CARRIER";
 
 export class AppError extends Error {
   code: ErrorCode;
